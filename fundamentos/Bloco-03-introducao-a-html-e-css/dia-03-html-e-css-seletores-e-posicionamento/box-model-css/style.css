@@ -1,0 +1,79 @@
+.caixa {
+  color: white;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.caixaA {
+  height: 50px;
+  width: 50px;
+  color: white;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: top;
+
+}
+
+.caixaB {
+  height: 50px;
+  width: 50px;
+  padding: 20px;
+  margin-left: -4px;
+  color: white;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: top;
+  }
+  
+  .caixaD {
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    margin: 30px;
+    border: 5px solid black;
+    color: white;
+    display: inline-block;
+    line-height: 51px;
+    text-align: center;
+ 
+  }
+
+  /* insira na classe abaixo um paddinkkg de 20px para aplicá-lo aos itens B, C e D */
+
+}
+
+.caixaC {
+  height: 50px;
+  width: 50px;
+  padding: 20px;
+  margin: 30px;
+  color: white;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+}
+
+.caixaD {
+  height: 50px;
+  width: 50px;
+  padding: 20px;
+  margin: 30px;
+  border: 5px solid black;
+  color: white;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+
+}
+
+/* insira na classe abaixo um padding de 20px para aplicá-lo aos itens B, C e D */
+
+
+/* insira na classe abaixo uma margem de 30px para aplicá-la aos itens C e D */
+
+
+/* insira na classe abaixo uma borda com valor '5px solid black' para aplicá-la ao item D */

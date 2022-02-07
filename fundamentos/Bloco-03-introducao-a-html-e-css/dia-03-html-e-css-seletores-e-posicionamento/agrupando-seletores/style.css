@@ -1,0 +1,27 @@
+
+/* O texto das tags 'h1' e 'p' estejam centralizados.*/
+/* 5 - No 'style.css', adicione a propriedade 'list-style: none' para ambas as listas.*/
+
+.container{
+    text-align: center;
+    list-style: none;
+    width: 40%;
+    margin: auto;
+
+}
+
+
+/* A cor de fundo da sua lista mude quando o cursor estiver sobre o item.*/
+
+li:hover{
+    background-color: aquamarine;
+    list-style: none;
+}
+
+/* A fonte do item mude quando ele for clicado.*/
+li:active{
+    color: yellow;
+}
+
+/*No index.html- Adicione uma lista não ordenada com, pelo menos, 3 características que você gosta.*/
+
