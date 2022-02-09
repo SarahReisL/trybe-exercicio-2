@@ -54,3 +54,17 @@ function RepetingIndex(numbers) {
 console.log(RepetingIndex([2, 3, 2, 5, 8, 2, 3]));
 
 
+// let indexRepeat = 0;
+// let maxnumber = highestArray[0];
+// for (let index = 1; index < highestArray.length; index += 1) {
+//   if(highestArray[index] > maxnumber){
+//     maxnumber = highestArray[index];
+//   }
+// } 
+// for (let i = 0; i < highestArray.length; i += 1) {
+//   if(maxnumber == highestArray[i]){
+//     maxnumber += 1;
+//   }
+// } 
+// return indexRepeat;
+// } 

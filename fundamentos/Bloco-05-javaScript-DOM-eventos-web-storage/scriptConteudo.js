@@ -1,0 +1,1 @@
+document.getElementById("page-title").innerText = "A vida é bela";
