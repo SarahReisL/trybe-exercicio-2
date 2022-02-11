@@ -1,0 +1,7 @@
+foco hoje JavaScript
+-colocando elementos dentro da <div>:
+atribuindo estilo.
+resgatandondo elementos apagados.
+criando elementos HTML.-criate 
+teste no console pra ver se esta sendo feito certo 
+excluindo um filho do pai
