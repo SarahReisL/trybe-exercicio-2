@@ -18,8 +18,6 @@ for (let index = 0; index < h3ColorNo.length; index += 1) {
   h3ColorNo[index].style.color = 'black';
 }
 
-//para alterar algo dentro da seção com? 
-
 // altera cor de fundo dos h3 dentro classe/seção 
 let h3 = document.querySelectorAll('#emergency-tasks h3');
 for (let index = 0; index < h3.length; index += 1) {
