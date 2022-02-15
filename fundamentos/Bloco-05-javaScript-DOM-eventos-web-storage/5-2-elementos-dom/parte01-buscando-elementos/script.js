@@ -22,8 +22,10 @@ let backPrimeiroFilho = document.getElementById('elementoOndeVoceEsta').previous
 // testando a chamada:
 backPrimeiroFilho.style.background = 'grey';
 
-//6 Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
-const noPai = document.getElementById('elementoOndeVoceEsta').nextSibling;
+//******6 Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
+let elem = document.getElementById('pai');
+el.removeChild(el.lastChild);
+
 // gabarito Way:
 // const textElement = elementoOndeVoceEsta.nextSibling;
 
@@ -66,7 +68,18 @@ const paiElementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
   // PARTE 03
 
 // Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
-const removeFilhos = document.getElementById(pai);
-
+// let removeFilhos = document.getElementById('pai');
+// removeFilhos.remove('pai');
+const pai = document.getElementById('pai');
+// for decrementa e remove todos os filhos da seção pai:
+for(let index = pai.childNodes.length - 1; index >= 0; index -= 1){
+  const atualChildren = pai.childNodes[index];
+  if (atualChildren.id !== 'elementoOndeVoceEsta') {
+    atualChildren.remove();
+  }
+}
+//remove irmão do primeiro filho
+const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+segundoEUltimoFilhoDoFilho.remove();
   
   
