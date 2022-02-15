@@ -20,11 +20,11 @@ let backPrimeiroFilho = document.getElementById('elementoOndeVoceEsta').previous
 // let backPrimeiroFilho = elementoOndeVoceEsta.previousElementSibling;
 
 // testando a chamada:
-backPrimeiroFilho.style.background = 'grey';
+backPrimeiroFilho.style.backgroundColor = 'grey';
 
 //******6 Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
 let elem = document.getElementById('pai');
-el.removeChild(el.lastChild);
+elem.removeChild(el.lastChild);
 
 // gabarito Way:
 // const textElement = elementoOndeVoceEsta.nextSibling;
