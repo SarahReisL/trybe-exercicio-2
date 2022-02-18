@@ -1,0 +1,38 @@
+<!-- //eventlistener/escutador de eventos
+//é o que dá dinamismo pra página
+//EXEMPLO COM   onlick
+//evento disparado quando a pessoa acessar a pág -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>onclick-Escutador de eventos</title>
+</head>
+<body>
+  <p id="trybe">
+    Oferta imperdível..
+  </p> 
+  <!-- onclick="maisInfos()" chama a function (no script) que será executada quando o botão"Mais informações"" for acionado e exibira o texto dentro do parágrafo -->
+  <button onclick="maisInfos();">Mais informações</button>
+  
+  <!-- //id do paragrafo do texto que é chamado na function maisInfos() -->
+  <p id="trybe-continua"></p>
+  
+  <script>
+    // está sendo usada para colocar o cod JS que vamos executar nessa pág.
+    // no que entramos na pág o alert("Página foi carregada!") é carregado
+    window.onload = jsCarregado
+    function jsCarregado() {
+      alert("Página foi carregada!")
+    }
+    // Essa function cria um texto dentro de do <p id="trybe-continua" depois do evento acontecer, depois que o botao é clicado. 
+    function maisInfos() {
+      let textoMaisInfo = document.getElementById("trybe-continua");
+      textoMaisInfo.innerText = "Aqui você vai aprender Hard Skills e Soft Skills";
+    }
+  </script>
+
+</body>
+</html>

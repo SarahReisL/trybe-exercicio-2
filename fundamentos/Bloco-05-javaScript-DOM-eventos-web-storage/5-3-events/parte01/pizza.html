@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido de pizza</title>
+</head>
+<body>
+  <p id="trybe">
+    Oferta imperdível..
+  </p> 
+  <!-- (onclick="maisInfos()"é o evento que ocorre quando o usuário cica em um elemento) ele chama a function (no script) que será executada quando o botão"Mais informações"" for acionado e exibira o texto dentro do parágrafo -->
+  <button onclick="maisInfos();">Mais informações</button>
+  
+  <!-- //id do paragrafo do texto que é chamado na function maisInfos() -->
+  <p id="trybe-continua"></p>
+  
+  <script>
+    // entra no script e quando a pág estver pronta, chama pizzaPronta
+    window.onload = pizzaPronta
+
+    function pizzaPronta() {
+      alert("Tocou a campainha"); //2º
+      alert("Recebi a pizza"); //3º
+    }
+
+    alert("Pedido da Pizza"); // 1º
+  </script>
+
+</body>

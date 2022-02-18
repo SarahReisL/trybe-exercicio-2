@@ -1,0 +1,60 @@
+<!-- permite add uma escuta de eventos de forma flexível, ñ precisa do onclick -->
+<!-- addEventListener(tipoEvento, function) é chamado apartir de um evento  -->
+<!-- EXWMPLOS: SCROLL, CLICK DBLCLICK CHANGE, MOUSEOVER, MOUSELEAVE, KEYDOWN -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido de pizza</title>
+</head>
+<body>
+  <p id="trybe">
+    APRENDENDO A USAR EVENTOS.
+  </p> 
+  <!-- OBJETO: é clicar no parágrafo SEM usar o onclick-->
+  <p id="clicar">Paragrafo para ser clicado</p>
+  
+  <!-- //id do paragrafo do texto que é chamado na function maisInfos() -->
+<div>
+  <button id="mouse-over-leave">Botão para ter o mouse passado em cima e removido</button>
+</div>
+
+  <script>
+    //Exemplo 1-Click-armazenei  elemento paragrafo
+    let clickParagrafo = document.getElementById("clicar");
+
+    //Adiciona o evento de click-
+    clickParagrafo.addEventListener("click", recebeClick);
+    clickParagrafo.addEventListener("click", mouseEmCima);
+    // eventoDeOrigemÉ O OBJT que recebe na function com todas a infos. 
+    function recebeClick(eventoDeOrigem) {
+      //Objeto evento
+      //Target: O elemento que originou esse mesmo evento
+      //Type: O tipo de evento que originou o click - Mouse, Keyboard, Screen...
+      //é o 
+      console.log(eventoDeOrigem.target);
+      console.log(eventoDeOrigem.type);
+    }
+
+    // EXEMPLO 2- MOUSE OVER, MOUSE LEAVE
+    let mouseOverLeaveButton = document.getElementById("mouse-over-leave");
+
+    //Adiciona o evento de mouse over
+    mouseOverLeaveButton.addEventListener("mouseover", mouseEmCima);
+    
+    function mouseEmCima(evento) {
+      console.log("Mouse passou por cima");
+      console.log(evento.target);
+    }
+    //Adiciona o evnto de mouse leave
+    mouseOverLeaveButton.addEventListener("mouseleave", mouseSaiuDeElemento);
+
+    function mouseEmCima() {
+      console.log("Mouse passou por cima");
+    }
+  </script>
+
+</body>
