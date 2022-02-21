@@ -1,0 +1,81 @@
+<!-- 21/02/22
+Deletamos o css usado na aula anterior
+e deletamos todas as classe do html
+-bootstrap-fizemos a lonkagem do css bootstrap
+(control F - class=".") pra alterar as clases
+
+-radio- um div pra cada selecao porque precisamos add classes de estilizacao
+
+dica: procure por palavra chave conforme o que quiser estilizar-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Submeter Palestra</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <header class="speaker-form-header">
+      <h1>Submeter Palestra</h1>
+      <p><em>Quer palestrar na nossa conferência? Preencha o formulário!</em></p>
+    </header>
+    <main>
+      <!-- form-PQ o get -->
+      <form action="" method="get" class="speaker-form">
+
+      <!-- input - full-name -->
+      <div class="form-row"> 
+        <div class="line-content">
+          <label for="full-name">Nome completo:
+          </label>
+          <input required type="text" nome="full-name" id="full-name">
+          <input type="date" name="" id="">
+        </div>
+      </div>
+
+      <!-- fieldset(vem sempre com o legend) - type-of-talk   -->
+      <div class="line-content">
+        <fieldset class="legacy-form-row">
+            <legend>Tipo de palestra</legend>
+            <input type="radio" name="talk-type" id="talk-type-1" value="main-stage">
+            <label for="">Palco principal
+            </label>
+            <br>
+            <input type="radio" name="talk-type" id="talk-type-2" value="workshop">
+            <label for="">Workshop
+            </label>
+        </fieldset>
+      </div>
+      <!-- select - t-short-size -->
+      <div class="line-content">
+        <label for="t-shirt">Tamanho da camisa:</label>
+        <select name="t-shirt" id="t-shirt" disabled="disabled">
+          <option value="p">Pequeno</option>
+          <option value="m">Médio</option>
+          <option value="g">Grande</option>
+        </select>
+      </div>
+
+      <!-- textarea - abstract  -->
+      <div class="line-content">
+        <label for="">Resumo da palestra</label>
+        <textarea placeholder="Explique o conteudo da palestra" name="abstract" id="abstract" cols="30" rows="10"></textarea>
+      </div>
+      <!-- checkbox - available -->
+      <div class="line-content">
+        <input type="checkbox" name="is-available" id="available">
+        <label for="available">Confirmo que estou disponível na data do evento</label>
+      </div>
+      <!-- button - submit -->
+      <div class="line-content">
+      <button type="submit">Enviar</button>        
+      </div>
+      </form>
+    </main>
+    
+
+    
+
+  </body>
+</html> 

@@ -1,0 +1,82 @@
+/* RESET DEFOUT */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+body {
+
+  color: rgb(93, 96, 99);
+  background-color: rgb(234, 237, 240);
+  font-family: "Helvetica", "Arial", sans-serif; 
+  font-size: 16px;
+   line-height: 1.3;/* O ESPAÇO SOME*/
+}
+  
+.speaker-form-header {
+  text-align: center;
+  background-color: rgb(246, 247, 248);
+  border: 1px solid rgb(214, 217, 220);
+  border-radius: 3px; /*IDEIA DE AREDONDAMENTO*/
+  width: 80%;
+ /* FORMAS DE APLICAR A MARGIN MAS Ñ É O IDEAL */
+  margin: 40px 0; /*PRA CIMA E PRA BAIXO OU USE 'auto' NO LUGAR DO '0' */
+  padding: 50px;
+   margin-right: auto;/* ñ DÁ CERTO SE O ELEMENTO PAI NAO ESTIVER DEFINIDO */
+  margin-left: auto;
+}
+  
+.speaker-form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+  
+.speaker-form {
+  background-color: rgb(246, 247, 248);
+  border: 1px solid rgb(214, 217, 220);
+  border-radius: 3px;
+  width: 80%;
+  padding: 50px;
+  margin: 0 auto 40px auto; /* funciona no sentido horario*/
+}
+  
+.form-row {
+  margin-bottom: 40px;
+}
+  /* quero que seja no input e no tipo texto */
+.form-row input[type="text"] {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(214, 217, 220);
+  border-radius: 3px;
+  width: 100%; /*é 100 dependendo de quem é o elemento pai*/
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 15px;
+}
+  
+.legacy-form-row {
+  padding: 10px; /*tamanho do espaço interno*/
+}
+  
+.line-content {
+  margin: 20px;
+  border: 0 none; /*podemos colocar um ou outro*/
+} 
+
+.legacy-form-row {
+  background-color: rgb(216, 215, 215);
+}
+
+textarea {
+  width:100%;
+  margin-top: 15px;
+  resize: none; /*o user nao vai poder alterar o textarea*/
+}
+
+button {
+  padding: 1%;
+}

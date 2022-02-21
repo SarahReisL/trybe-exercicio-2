@@ -1,0 +1,78 @@
+<!-- FORMULÁRIOS COM HTML e CSS!
+(https://www.youtube.com/watch?v=wwqOJ2o84S4) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAdastro</title>
+</head>
+<body>
+  <div>
+    <h1 id="titulo">Cadastro de DEVs</h1>
+    <p id="subtitulo">Complete suas informações</p>
+  </div>
+  
+  <form>
+    <fieldset class="grupo"> 
+      <div>
+        <label>Nome</label>
+        <input type="text" name="nome" id="nome">
+      </div>
+      <div>
+        <label>Sobremone</label>
+        <input type="text" name="sobrenome" id="sobrenome">
+      </div>
+    </fieldset>
+
+    <div>
+      <label>Email</label>
+      <input type="email" name="email" id="email">
+    </div>
+
+    <div>
+      <label>De qual lado da aplicação você desenvolve</label>
+      <label>
+        <input type="radio" name="devweb" value="frontend" checked>Front-end
+      </label>
+      <label>
+        <input type="radio" name="devweb" value="backend">Back-end
+      </label><label>
+        <input type="radio" name="devweb" value="fullstack">Fullstack
+      </label>
+    </div>
+
+    <div>
+      <label>Senioridade</label>
+      <select id="senioridade">
+        <option selected disabled value="">Selecione</option>
+        <option>Junior</option>
+        <option>Pleno</option>
+        <option>Senior</option>
+      </select>
+    </div>
+
+    <fieldset class="grupo">
+      <div>
+        <label>Selecione as tec que utiliza</label>
+        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+        <label for="tecnologia1">HTML</label>
+        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+        <label for="tecnologia1">CSS</label>
+        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+        <label for="tecnologia1">JavaScript</label>
+      </div>
+    </fieldset>
+
+    <div>
+      <br>
+      <label>Conte um pouco sobre sua esperiência:</label>
+      <textarea rows="6" style="width: 26em" id="esperiencia" name="esperiencia"></textarea>
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>

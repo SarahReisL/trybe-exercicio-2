@@ -13,15 +13,40 @@
   <h1>
     FORMULARIO
   </h1>
+  
+  <!-- se for um method="POST"->'enctype="multipart/form-data" -->
   <form action="" method="GET">
     <!-- etique para o campo de entroduzir texto -->
-    <div class="type-name">
-    <lable for="input-text">Digite seu nome:</lable>
-    <input type="text" placeholder="digite alguma coisa" required class="" 
-    value="preencha esse campo" name="texto"
+  <div class="type-name">
+    <lable for="input-text">Digite seu nome completo:</lable>
+    <input type="text" placeholder="Digite seu nome completo" required class="" 
+    value="preencha esse campo" name="nome"
     id="input-text">
   </div>
+  <div>
+    <label for="email">
+      <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+    </label>
+  </div>
     <br>
+          <!-- select- option-trop downlist -->
+  <div>
+    <label for="">
+      <select name="estado" id="dropdown-estado">
+        <option value="sp">Sao paulo</option>
+        <option value="ba">Bahia</option>
+        <option value="am">Amazonas</option>
+        <option value="mg">Minas Gerais</option>
+      </select>
+    </label>  
+  </div>  
+  <br>  
+
+    <p>Selecione sua foto:</p>
+    <input type="file" name="foto" id="foto-perfil">
+  <br>
+    <button type="submit" class="" name="" id="">Enviar</button>
+
     <!-- campo de texto maior-colunas e linhas -->
     <div class="type-name">
     <textarea name="" id="" cols="30" rows="5">Digite dfadosa</textarea>
@@ -29,16 +54,16 @@
     <button type="submit">Enviar</button>
   </div>  
   <br>
+
     <!-- CHECK BOX -->
     <input type="checkbox" id="esporte-1" value="fut" name="esporte" checked>futebol
     <input type="checkbox" id="esporte-2"value="box" name="esporte" checked>box
     <input type="checkbox" id="esporte-3"value="vol" name="esporte" checked>volei
-<br>
-<br>
-<br>
-
+  <br>
+  <br>
+  <br>
       <!-- button - submit -->
-    <label>
+    <!-- <label>
     <input type="radio" id="hub1" name="hub" value="sp"> saopaulo
     </label>
     <label>
@@ -47,19 +72,13 @@
     <label>
     <input type="radio" id="hub3" name="hub" value="rj"> RioJaneiro>
     </label>
-  <br>
-        <!-- select- option -->
-    <select name="estado" id="dropdown-estado">
-      <option value="sp">Sao paulo</option>
-      <option value="ba">Bahia</option>
-      <option value="am">Amazonas</option>
-    </select>
+  <br> -->
 
-    Senha:
-    <input type="password" name="" > 
 
+
+    <!-- input file - envia arquivos p/ page HTML -->
+          <!-- button - submit -->
     Anexar arquivo:
-    <input type="file" name="" id="">
 
 
   </form>
