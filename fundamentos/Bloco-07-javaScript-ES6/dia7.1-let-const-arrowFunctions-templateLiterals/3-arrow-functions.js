@@ -23,7 +23,7 @@ console.log(contaPalavras('Ola tudo bem? Boa noite, boa sorte'));
 
 // com arrow
 const contaWords = frase => frase.split(' ').length;
-console.log(contaWords('ola ola ola'));
+console.log(contaWords('Ola tudo bem? Boa noite, boa sorte'));
 
 /* objeto que imprime dados */
 //tradicional
@@ -33,7 +33,7 @@ function objetoPessoa (nome, idade) {
     idade: idade
   }
 }
-console.log(objetoPessoa('sSarah', 24));
+console.log(objetoPessoa('Sarah', 24));
 
 //arrow function
 const objetoPessoa = (nome, idade) => ({nome: nome, idade: idade});
