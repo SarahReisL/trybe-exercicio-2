@@ -55,13 +55,13 @@ function createPresentationMessage(personName, callback) {
 
 
 // Exemplo de execução
-// createPresentationMessage('Xuxa', (erro, result) => {
-//   if (erro === null) {
-//     console.log(result);
-//   } else {
-//     console.log(erro);
-//   }
-// });
+createPresentationMessage('Xuxa', (erro, result) => {
+  if (erro === null) {
+    console.log(result);
+  } else {
+    console.log(erro);
+  }
+}); 
 
 module.exports = {
   createPresentationMessage,
