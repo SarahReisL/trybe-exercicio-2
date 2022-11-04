@@ -1,0 +1,5 @@
+//gte-greather than or equal to - maios que ou igual a
+//[x]Exibir filmes com ano maior ou igual a 1993
+
+use("trybeFlix");
+db.filmes.find({ ano: { $gte: 1993 }});

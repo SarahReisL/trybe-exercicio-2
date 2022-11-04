@@ -1,0 +1,11 @@
+use("trybeFlix");
+//eq-equal to-igual a
+
+// [x]Exibir filmes com ano 1993
+//forma inplicita
+// db.filmes.find({ ano: 1993});
+// db.filmes.find({ ano: { $eq: 1993 }});
+
+// [x]Exibir filmes com avaliação bom igual a 7
+db.filmes.find({ "avaliacao.bom": { $eq: 7 } });
+// db.filmes.find({ "avaliacao.bom": 7 });

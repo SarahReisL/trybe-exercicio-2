@@ -1,0 +1,5 @@
+//ne-not equal-nao é igual a
+//[x]Exibir filmes que não tenham avaliação ruim igual a 8
+use("trybeFlix");
+
+db.filmes.find({ "avaliacao.ruim": { $ne: 8 } });

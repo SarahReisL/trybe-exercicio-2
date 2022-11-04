@@ -1,0 +1,5 @@
+//nin-se não está dentro de
+//[x]Exibir filmes que não estejam nos anos 2013 e 2008
+use("trybeFlix");
+
+db.filmes.find({ ano: { $nin: [2013, 2008] } })

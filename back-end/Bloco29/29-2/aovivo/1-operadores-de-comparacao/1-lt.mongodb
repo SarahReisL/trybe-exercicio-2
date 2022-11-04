@@ -1,0 +1,9 @@
+use("trybeFlix");
+// lt- less than-menor que
+//sintaxe base:
+//{ campo-de-atuacao: { $operador: dado }}
+//{ field: { $operador: value } }
+
+// [x] Exibir filmes com ano menor que 2000
+
+db.filmes.find({ ano: { $lt: 2000 }});

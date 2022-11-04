@@ -1,0 +1,9 @@
+// Combinando Operadores 
+// Sintaxe Base:
+// passando 2 operadores para filtrar um unico campo
+// { field: { $operator: value, $operator: value }}
+
+//[x]Exibir filmes com ano entre 1993 e 2000 (inclusive)
+
+use("trybeFlix");
+db.filmes.find({ ano: { $gte: 1993, $lte: 2000 }});

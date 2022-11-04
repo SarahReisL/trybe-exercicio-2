@@ -1,0 +1,4 @@
+// lte - less than or equal - menor que ou igual a
+//[x]Exibir filmes com ano menor ou igual a 2000
+use("trybeFlix");
+db.filmes.find({ ano: { $lte: 2000 }});
