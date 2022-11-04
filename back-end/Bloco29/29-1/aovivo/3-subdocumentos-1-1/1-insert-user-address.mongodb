@@ -1,0 +1,12 @@
+use('class')
+
+db.users.insertOne({
+    _id: "joe",
+    name: "Joe Monteiro",
+    address: {
+      street: "Rua das Laranjeiras",
+      city: "Poços de Caldas",
+      state: "MG",
+      zip: "37001-000"
+    }
+})

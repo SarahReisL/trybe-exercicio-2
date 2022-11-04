@@ -1,0 +1,6 @@
+use('class')
+
+db.inventory.find({
+  status: "D",
+  item: "paper"
+})

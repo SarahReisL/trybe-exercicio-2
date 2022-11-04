@@ -1,0 +1,4 @@
+use('class');
+
+db.inventory.find()
+// db.inventory.find({})

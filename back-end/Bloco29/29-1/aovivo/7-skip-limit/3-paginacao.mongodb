@@ -1,0 +1,3 @@
+use('class');
+// numeroPag tem que -1 para começar do 0
+db.inventory.find({}, { item: 1 }).skip(numeroPag-1 * limit).limit(2);

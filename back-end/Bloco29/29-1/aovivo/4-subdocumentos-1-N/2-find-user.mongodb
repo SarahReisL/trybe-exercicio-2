@@ -1,0 +1,3 @@
+use('class')
+// recuperando os dados e pretty ajeita a indentation
+db.users.find({ _id: "amanda" }).pretty();

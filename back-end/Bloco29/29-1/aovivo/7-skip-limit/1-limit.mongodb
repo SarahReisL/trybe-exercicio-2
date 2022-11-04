@@ -1,0 +1,2 @@
+use('class');
+// db.inventory.find().limit(2);

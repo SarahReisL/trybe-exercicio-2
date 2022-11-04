@@ -1,0 +1,3 @@
+use('class')
+// acessando sub-documentos
+db.users.find({ 'addresses.state': 'NY' });

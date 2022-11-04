@@ -1,0 +1,5 @@
+use('class')
+
+db.inventory.find({
+    status: "D"
+});

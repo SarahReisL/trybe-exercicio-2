@@ -1,0 +1,3 @@
+use('class')
+
+db.users.find({ _id: "joe" } )

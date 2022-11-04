@@ -1,0 +1,4 @@
+use('class');
+// db.inventory.find().limit(2).skip(1);
+//skip 0 mostra 2 elementos. então sempre retorna o valor do skip * o valor do limit
+db.inventory.find({}, { item: 1 }).skip(4).limit(2);

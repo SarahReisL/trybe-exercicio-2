@@ -1,0 +1,20 @@
+use('class')
+
+db.users.insert({
+  _id: "amanda",
+  name: "Amanda Ribeiro",
+  addresses: [
+    {
+      street: "Sunset Boulevard",
+      city: "Los Angeles",
+      state: "CA",
+      zip: "12345"
+    },
+    {
+      street: "1 Some Other Street",
+      city: "New York",
+      state: "NY",
+      zip: "12345"
+    }
+  ]
+})
