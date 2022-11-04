@@ -1,0 +1,15 @@
+use("trybeComics");
+
+db.superheroes.insertMany([
+{"name": "A-Bomb", "alignment": "good", "gender": "Male", "race": "Human", "aspects": {"eyeColor": "yellow", "hairColor": "No Hair", "height": 203.0, "weight": 200.0}, "publisher": "Marvel Comics"},
+{"name": "Abe Sapien", "alignment": "good", "gender": "Male", "race": "Icthyo Sapien", "aspects": {"eyeColor": "blue", "hairColor": "No Hair", "skinColor": "blue", "height": 191.0, "weight": 29.48}, "publisher": "Dark Horse Comics"},
+{"name": "Abin Sur", "alignment": "good", "gender": "Male", "race": "Ungaran", "aspects": {"eyeColor": "blue", "hairColor": "No Hair", "skinColor": "red", "height": 185.0, "weight": 40.82}, "publisher": "DC Comics"},
+{"name": "Abomination", "alignment": "bad", "gender": "Male", "race": "Human / Radiation", "aspects": {"eyeColor": "green", "hairColor": "No Hair", "height": 203.0, "weight": 200.0}, "publisher": "Marvel Comics"},
+{"name": "Abraxas", "alignment": "bad", "gender": "Male", "race": "Cosmic Entity", "aspects": {"eyeColor": "blue", "hairColor": "Black", "height": -99.0, "weight": -44.9}, "publisher": "Marvel Comics"},
+{"name": "Absorbing Man", "alignment": "bad", "gender": "Male", "race": "Human", "aspects": {"eyeColor": "blue", "hairColor": "No Hair", "height": 193.0, "weight": 55.33}, "publisher": "Marvel Comics"},
+{"name": "Adam Monroe", "alignment": "good", "gender": "Male", "aspects": {"eyeColor": "blue", "hairColor": "Blond", "height": -99.0, "weight": -44.9}, "publisher": "NBC - Heroes"},
+{"name": "Adam Strange", "alignment": "good", "gender": "Male", "race": "Human", "aspects": {"eyeColor": "blue", "hairColor": "Blond", "height": 185.0, "weight": 39.91}, "publisher": "DC Comics"},
+{"name": "Agent 13", "alignment": "good", "gender": "Female", "aspects": {"eyeColor": "blue", "hairColor": "Blond", "height": 173.0, "weight": 27.66}, "publisher": "Marvel Comics"},
+{"name": "Agent Bob", "alignment": "good", "gender": "Male", "race": "Human", "aspects": {"eyeColor": "brown", "hairColor": "Brown", "height": 178.0, "weight": 36.73}, "publisher": "Marvel Comics"},
+{"name": "Agent Zero", "alignment": "good", "gender": "Male", "aspects": {"height": 191.0, "weight": 47.17}, "publisher": "Marvel Comics"}
+]);
