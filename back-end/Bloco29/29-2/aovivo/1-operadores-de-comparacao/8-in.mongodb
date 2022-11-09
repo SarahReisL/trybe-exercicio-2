@@ -1,4 +1,4 @@
-db.filmes.find({ ano: { $in: [2001, 1968, 1995] } })
+// db.filmes.find({ ano: { $in: [2001, 1968, 1995] } })
 //in-se está dentro de
 // Sintaxe Base:
 // { field: { $operator: [value1, value2, value3...] }}

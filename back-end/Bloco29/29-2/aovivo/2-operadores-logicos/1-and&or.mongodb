@@ -1,0 +1,30 @@
+use("trybeFlix");
+// $and - um campo e+ outro campo
+
+// Sintaxe Base:
+// { $and: [{ field: {$operator: value}}, {field: {$operator: value}}] }
+// { $and: [{ field: value}, {field: value }] }
+
+//[x]Exiba os documentos em que o campo ano seja maior que 2000 
+// e o campo bom de avaliação seja maior ou igual a 8.
+//----nao sei pq aqui o $and retorna vazio, mas o $or retorna o resultado esperado.
+db.filmes.find({ $and: [
+    { ano: { $gt:2000 } }, 
+    { "avaliacao.bom": { $gte: 8 } }
+    ]
+});
+
+//---------------------------------------------------
+//$or - ou 1 ou outro
+
+// Sintaxe Base:
+// { $or: [{ field: {$operator: value}}, {field: {$operator: value}}] }
+//  { $or: [{ field: value}, {field: value }] }
+
+// [x]Exiba os documentos em que o campo ano seja maior que 2000 
+// ou o campo bom de avaliação seja maior ou igual a 8.
+// db.filmes.find({ $or: [
+//     { ano: { $gte:2000 } }, 
+//     { "avaliacao.bom": { $gte: 8 } }
+//     ]
+// });

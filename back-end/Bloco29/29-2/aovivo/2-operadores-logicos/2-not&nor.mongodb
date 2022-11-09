@@ -1,0 +1,45 @@
+use("trybeFlix");
+//$not-não apareça
+// Sintaxe Base:
+// { field: { $not: { $operator: value } } }
+//[x]- Exiba os documentos sem o diretor Michael Bay
+// db.filmes.find({ diretor:
+//     { $not: { $eq: "Michael Bay" }}
+// });
+
+
+// ------------------------------------------------
+// $nor - negação
+// Sintaxe Base:
+// { $nor: [ { field: value }, { field: value } ] }
+// { $nor: [ { field: { $operator: value } }, { field: { $operator: value }} ] }
+
+// [x]Exiba os documentos sem o diretor Michael Bay, nem avaliação “ruim” igual a 10 
+// db.filmes.find({ $nor: 
+//     [ { diretor: { $eq: "Michael Bay"  } },
+//       { "avaliacao.ruim": { $eq: 10 } } ] }
+// );
+
+// [x]Exiba os documentos sem o diretor Michael Bay, nem avaliação “bom” menor que 7 
+// db.filmes.find({ $nor: 
+//     [ { diretor: { $eq: "Michael Bay"  } },
+//       { "avaliacao.bom": 7 } ] }
+// );
+
+// [x]Exiba os documentos sem ano maior que 2000, nem avaliação “ruim” maior que 6
+// db.filmes.find({ $nor: 
+//     [ { ano: { $gt: 2000  } },
+//       { "avaliacao.ruim": { $lte: 6 } } ] }
+// );
+
+//[]Filtre os filmes do Quentin Tarantino que nem o nome seja Os Oito Odiados 
+// e a Django Livre nem o ano seja 1993. (Usando o operador $nor)
+db.filmes.find({
+    $and: [
+        { diretor: { $eq: "Quentin Tarantino"}},
+        {
+           $nor: [ { Título: "Os Oito Odiados" },
+                  { Título: "Django Livre" },
+                  {ano: {$eq: 1993}}]}
+    ]
+})
